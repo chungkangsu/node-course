@@ -1,13 +1,19 @@
 // 回傳 1 + 2 + ... + n 的結果
-function sum(n) {
-    let sum=0;
-    for(let i =1;i<=n;i++){
+function sum1(n) {
+    let sum = 0;
+    for(let i = 1;i<=n;i++){
         sum+=i;
         
     }
     return sum;
     // return 結果
-  }
+}
+function sum2(n) {
+    return ((n + 1) * n) / 2;
+};
+let sum1 =(n)=>{
+
+}
   
   console.log(sum(1)); // 1
   console.log(sum(2)); // 3
