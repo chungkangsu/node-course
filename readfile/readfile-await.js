@@ -13,3 +13,13 @@ function getReadfilePromise(filepath) {
     });
   });
 }
+
+async function main() {
+    try {
+        let read = await getReadfilePromise("test.txt");
+        console.log(read);
+    } catch (e) {
+        console.log(e);
+    }
+}
+main();
