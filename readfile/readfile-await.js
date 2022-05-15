@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 
 function getReadfilePromise(filepath) {
@@ -14,19 +13,3 @@ function getReadfilePromise(filepath) {
     });
   });
 }
-
-getReadfilePromise('test.txt')
-  .then((result) => {
-    console.log(`resolved: ${result}`);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
-getReadfilePromise('test111.txt')
-  .then((result) => {
-    console.log(`resolved: ${result}`);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
